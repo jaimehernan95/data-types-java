@@ -3,22 +3,25 @@
 
 ## Class 
 
-### At its most basic level, a class is a collection of variables (fields) and functions called methods. A program is a collection of classes. The basic code for declaring a Java class is as follows:
+ At its most basic level, a class is a collection of variables (fields) and functions called methods. A program is a collection of classes. The basic code for declaring a Java class is as follows:
 
-### class MyClass{
+### class 
+
+` MyClass{
     // This is a single-line comment.
-    
     /*  This is also a comment.
         This type of comment can span several lines
     */
-}
-### When declaring a class, the name should always start with a capital letter; this signifies to certain compilers (and human readers of your code) that it is a class (or other similarly-behaved structure that you'll learn about later). If you wish to use a compound phrase (e.g.: "my class") as your class name, you should write it in CamelCase; this means you should capitalize each word and remove spaces between words (e.g.: "MyClass").
+}`
+
+When declaring a class, the name should always start with a capital letter; this signifies to certain compilers (and human readers of your code) that it is a class (or other similarly-behaved structure that you'll learn about later). If you wish to use a compound phrase (e.g.: "my class") as your class name, you should write it in CamelCase; this means you should capitalize each word and remove spaces between words (e.g.: "MyClass").
 
 
 ###  __Note__: Class names cannot begin with numbers or contain any spaces.
 
 ## variable
-<img width="764" alt="Regular Expressions Patterns in Java" src="https://github.com/jaimehernan95/BitwiseOperations/blob/main/image/bO0.png">
+
+<img width="764" alt="Regular Expressions Patterns in Java" src="https://github.com/jaimehernan95/data-types-java/blob/main/image/eclipse.png">
 
 ## Function
 
@@ -27,12 +30,12 @@
 ## Method
 ### in Object-Oriented programming, a method is a type of function that operates on the fields of a class.
 
-int myMethod(){
+`int myMethod(){
     // ...does cool stuff.
 }
 void myMethod(int myInt){
     // ...does cool stuff.
-}
+}`
 
 ## Object
 ## Stream
@@ -40,7 +43,7 @@ void myMethod(int myInt){
 
 #### **source**: https://www.hackerrank.com/challenges/30-hello-world/tutorial
 
-### this file contains  3 examples of data type and one challenge has been solved using Java 7, below you can find the screentshoots from the objective and the result
+> This file contains  3 examples of data type and one challenge has been solved using Java 7, below you can find the screentshoots from the objective and the result
 
 ## Objective
 
@@ -48,20 +51,21 @@ void myMethod(int myInt){
 
 ## Stream
 
-### Think of this as the flow of data from one place to another. Most of our challenges require you to read input from System.in (also known as stdin, the standard input stream), and write output to System.out (also known as stdout, the standard output stream). In Java, the Scanner class is widely used to read input, but each language has its own mechanism for handling IO (input and output).
+ Think of this as the flow of data from one place to another. Most of our challenges require you to read input from System.in (also known as stdin, the standard input stream), and write output to System.out (also known as stdout, the standard output stream). In Java, the Scanner class is widely used to read input, but each language has its own mechanism for handling IO (input and output).
 
 
-### The syntax for reading from stdin using the Scanner class is as follows:
+The syntax for reading from stdin using the Scanner class is as follows:
 
-### Scanner scan = new Scanner(System.in);
-### This creates a new Scanner object that reads from the System.in stream and can be accessed using the variable name . To read in information from stdin, you just need to apply Scanner's methods to your scanner object. Here are two basic examples:
+` Scanner scan = new Scanner(System.in);`
+
+This creates a new Scanner object that reads from the System.in stream and can be accessed using the variable name . To read in information from stdin, you just need to apply Scanner's methods to your scanner object. Here are two basic examples:
 
 `scan.next(); // returns the next token of input
  scan.hasNext(); // returns true if there is another token of input (false otherwise)
  scan.nextLine() // returns the next LINE of input
 scan.hasNextLine();// returns true if there is another line of input`
 
-### When you are finished reading from an input stream, you should close it to avoid a resource leak. The following line of code closes the Scanner object referenced by our  scan variable:
+When you are finished reading from an input stream, you should close it to avoid a resource leak. The following line of code closes the Scanner object referenced by our  scan variable:
 
 `**scan.close();**`
 Let's say we want to assign a value received from stdin to some String that we'll name s , and then print it. We can accomplish this with the following code:
@@ -78,25 +82,20 @@ You can also print text in quotes using System.out.println, or combine quoted te
 
 # Code
 
-`public class Solution {
+` public class Solution {
 public static void main(String[] args) {
     // Create a Scanner object to read input from stdin.
-    Scanner scan = new Scanner(System.in); `
-    
+    Scanner scan = new Scanner(System.in); 
     // Read a full line of input from stdin and save it to our variable, inputString.
-    `String inputString = scan.nextLine();`
-
-
+    String inputString = scan.nextLine();
     // Close the scanner object, because we've finished reading 
     // all of the input from stdin needed for this challenge.
-    `scan.close();`
-  
+    scan.close();
     // Print a string literal saying "Hello, World." to stdout.
-    `System.out.println("Hello, World." );`
-    
+    System.out.println("Hello, World." );
     // TODO: Write a line of code here that prints the contents of inputString to stdout.
-    `System.out.println(inputString);`
-`}
+    System.out.println(inputString);
+}
 }`
 
 
@@ -167,11 +166,11 @@ Print the sum of both integers on the first line, the sum of both doubles (scale
 import java.util.*;
 import java.text.*;
 import java.math.*;
-import java.util.regex.*;`
+import java.util.regex.*;
 
-`public class Solution {`
+public class Solution {
     
-    `public static void main(String[] args) {
+        public static void main(String[] args) {
         int i = 4;
         double d = 4.0;
         String s = "HackerRank ";`
@@ -222,4 +221,5 @@ import java.util.regex.*;`
     * 16
     * 8.0
 * HackerRank is the best place to learn and practice coding!
-# data-types-java
+
+#### **source**: https://www.hackerrank.com/challenges/30-hello-world/tutorial
